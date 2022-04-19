@@ -1,4 +1,5 @@
 {
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "video-item":"../../components/video-item-v1/index"
   }

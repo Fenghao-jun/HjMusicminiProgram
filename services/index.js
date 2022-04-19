@@ -8,6 +8,7 @@ class MRequire {
         data: params,
         method: method,
         success: (result) => {
+          console.log(result.data);
           reslove(result.data)
         },
         fail:reject

@@ -18,7 +18,7 @@
     "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
-    "checkSiteMap": false,
+    "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
@@ -43,7 +43,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.21.2",
   "appid": "wx4e72dc4f1a047c70",
-  "projectname": "MyMiniProgram",
+  "projectname": "网抑云音乐",
   "debugOptions": {
     "hidedInDevtools": []
   },
