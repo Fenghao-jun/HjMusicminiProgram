@@ -1,0 +1,18 @@
+/* components/related-video-item/index.wxss */
+.related-video-item{
+	display: flex;
+}
+
+.related-video-item-title{
+	font-size: 30rpx;
+}
+
+.related-video-item-left{
+	width: 40%;
+}
+.related-video-item-right{
+	width: 60%;
+}
+.image{
+	width: 100%;
+}

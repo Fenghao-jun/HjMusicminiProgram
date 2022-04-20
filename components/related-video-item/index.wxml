@@ -1,0 +1,10 @@
+<!--components/related-video-item/index.wxml-->
+<view class="related-video-item">
+	<view class="related-video-item-left">
+		<image src="{{item.coverUrl}}" mode="widthFix" class="image"> </image>
+
+	</view>
+	<view class="related-video-item-right">
+		<view class="related-video-item-title">{{item.title}}</view>
+	</view>
+</view>

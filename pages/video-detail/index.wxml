@@ -1,2 +1,11 @@
 <!--pages/video-detail/index.wxml-->
-<text>pages/video-detail/index.wxml</text>
+<video class="detail-video" src="{{mvUrl.url}}"></video>
+
+
+
+<view class="related-video">
+	<h3>推荐视频</h3>
+	<view wx:for="{{relatedVideo}}" wx:key="id">
+		<related-video-item item="{{item}}"></related-video-item>
+	</view>
+</view>
