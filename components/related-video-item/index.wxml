@@ -1,8 +1,11 @@
 <!--components/related-video-item/index.wxml-->
+<wxs src='../../utils/format.wxs' module="format"></wxs>
 <view class="related-video-item">
 	<view class="related-video-item-left">
 		<image src="{{item.coverUrl}}" mode="widthFix" class="image"> </image>
-
+		<view class="info">
+			<view class="durationms">{{format.formatCounter(item.playTime)}}</view>
+		</view>
 	</view>
 	<view class="related-video-item-right">
 		<view class="related-video-item-title">{{item.title}}</view>

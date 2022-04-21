@@ -1,0 +1,23 @@
+{
+  "name": "myminiprogram",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fenghao-jun/HjMusicminiProgram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fenghao-jun/HjMusicminiProgram/issues"
+  },
+  "homepage": "https://github.com/Fenghao-jun/HjMusicminiProgram#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.2"
+  }
+}
