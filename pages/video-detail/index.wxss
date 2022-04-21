@@ -1,10 +1,10 @@
 /* pages/video-detail/index.wxss */
 .detail-video {
-	width: 100%;
-	position: fiexd;
+  width: 100%;
+  position: fiexd;
 }
 
 .related-video {
-	box-sizing: border-box;
-	padding: 0px 15rpx;
+  box-sizing: border-box;
+  padding: 0px 15rpx;
 }
