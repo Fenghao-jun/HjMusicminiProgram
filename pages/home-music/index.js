@@ -1,5 +1,13 @@
 // pages/home-music/index.js
 import { getMusicBanner } from '../../services/api_music'
+import { queryRect } from '../../utils/query-rect'
+import { throttle } from '../../utils/throttle'
+
+const test = ()=>{
+  console.log(1);
+}
+const throttleQueryRect = throttle(queryRect)
+const throttleTest = throttle(test)
 Page({
   /**
    * 页面的初始数据
@@ -23,14 +31,18 @@ Page({
       url: '../search-detail/index',
     })
   },
+  /**
+   * 请求数据
+   */
   handleBannerOnLoad:async function(){
     const {banners} = await getMusicBanner()
     this.setData({bannerData:banners})
   },
-  handleImageSize:function(event){
-    const query = wx.createSelectorQuery()
-    query.select('.image').boundingClientRect()
-    query.exec((res)=>{       
+  /**
+   * 根据image组件mode处理后的图片高度规定swper组件
+   */
+  handleImageSize: function(){
+    throttleQueryRect('.image').then((res)=>{
       this.setData({swiperHeight:res[0].height})
     })
   }
