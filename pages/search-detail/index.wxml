@@ -1,0 +1,7 @@
+<van-search
+ background='#fafafa'
+ shape='round'
+ placeholder='请搜索您喜欢的歌曲'
+ disabled
+ bindtap="handleSearchClick"
+/>
