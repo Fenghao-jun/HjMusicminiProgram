@@ -7,12 +7,13 @@
 />
 <swiper
  class="swiper"
+ style="height: {{swiperHeight}}px;"
  indicator-dots
  circular
  autoplay>
 	<block wx:for="{{bannerData}}" wx:key="bannerId">
 		<swiper-item>
-			<image class="image" mode="widthFix" src="{{item.pic}}"></image>
+			<image class="image" mode="widthFix" bindload="handleImageSize" src="{{item.pic}}"></image>
 		</swiper-item>
 	</block>
 </swiper>

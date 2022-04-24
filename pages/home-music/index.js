@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bannerData:[]
+    bannerData:[],
+    swiperHeight:0
   },
   
   /**
@@ -25,5 +26,12 @@ Page({
   handleBannerOnLoad:async function(){
     const {banners} = await getMusicBanner()
     this.setData({bannerData:banners})
+  },
+  handleImageSize:function(event){
+    const query = wx.createSelectorQuery()
+    query.select('.image').boundingClientRect()
+    query.exec((res)=>{       
+      this.setData({swiperHeight:res[0].height})
+    })
   }
 });
