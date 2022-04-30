@@ -1,10 +1,10 @@
 /* eslint-disable */
-var style = require("../wxs/style.wxs");
-var addUnit = require("../wxs/add-unit.wxs");
+var style = require('../wxs/style.wxs');
+var addUnit = require('../wxs/add-unit.wxs');
 
 function rootStyle(data) {
   return style({
-    "z-index": data.zIndex,
+    'z-index': data.zIndex,
     top: addUnit(data.top),
   });
 }

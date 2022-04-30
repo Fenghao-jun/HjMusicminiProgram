@@ -1,6 +1,6 @@
 /* eslint-disable */
-var style = require("../wxs/style.wxs");
-var addUnit = require("../wxs/add-unit.wxs");
+var style = require('../wxs/style.wxs');
+var addUnit = require('../wxs/add-unit.wxs');
 
 function spinnerStyle(data) {
   return style({
@@ -12,7 +12,7 @@ function spinnerStyle(data) {
 
 function textStyle(data) {
   return style({
-    "font-size": addUnit(data.textSize),
+    'font-size': addUnit(data.textSize),
   });
 }
 

@@ -1,0 +1,6 @@
+<!--components/rank-song/index.wxml-->
+<view class="rank-song">
+	<image  src="{{item.al.picUrl}}"></image>
+	<view class="content">
+	</view>
+</view>

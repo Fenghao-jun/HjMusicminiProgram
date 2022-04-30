@@ -9,3 +9,10 @@ export function getMusicBanner(){
 		type:2
 	})
 }
+
+export function getRankingSongs(idx=0) {
+	return mRequire.get('/top/list',{
+		idx
+	})
+	
+}

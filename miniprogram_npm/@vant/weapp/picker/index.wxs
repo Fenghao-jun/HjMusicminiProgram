@@ -1,7 +1,7 @@
 /* eslint-disable */
-var style = require("../wxs/style.wxs");
-var addUnit = require("../wxs/add-unit.wxs");
-var array = require("../wxs/array.wxs");
+var style = require('../wxs/style.wxs');
+var addUnit = require('../wxs/add-unit.wxs');
+var array = require('../wxs/array.wxs');
 
 function columnsStyle(data) {
   return style({
@@ -11,8 +11,8 @@ function columnsStyle(data) {
 
 function maskStyle(data) {
   return style({
-    "background-size":
-      "100% " + addUnit((data.itemHeight * (data.visibleItemCount - 1)) / 2),
+    'background-size':
+      '100% ' + addUnit((data.itemHeight * (data.visibleItemCount - 1)) / 2),
   });
 }
 
