@@ -21,7 +21,8 @@
   "homepage": "https://github.com/Fenghao-jun/HjMusicminiProgram#readme",
   "dependencies": {
     "@vant/weapp": "^1.10.2",
-    "hy-event-store": "^1.2.1"
+    "hy-event-store": "^1.2.1",
+    "prettier": "^2.6.2"
   },
   "devDependencies": {
     "husky": "^7.0.0"

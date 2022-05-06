@@ -1,10 +1,10 @@
 /* eslint-disable */
-var style = require('../wxs/style.wxs');
-var addUnit = require('../wxs/add-unit.wxs');
+var style = require("../wxs/style.wxs");
+var addUnit = require("../wxs/add-unit.wxs");
 
 function iconStyle(data) {
   var styles = {
-    'font-size': addUnit(data.iconSize),
+    "font-size": addUnit(data.iconSize),
   };
 
   if (
@@ -12,8 +12,8 @@ function iconStyle(data) {
     !(data.disabled || data.parentDisabled) &&
     data.value === data.name
   ) {
-    styles['border-color'] = data.checkedColor;
-    styles['background-color'] = data.checkedColor;
+    styles["border-color"] = data.checkedColor;
+    styles["background-color"] = data.checkedColor;
   }
 
   return style(styles);
@@ -21,9 +21,9 @@ function iconStyle(data) {
 
 function iconCustomStyle(data) {
   return style({
-    'line-height': addUnit(data.iconSize),
-    'font-size': '.8em',
-    display: 'block',
+    "line-height": addUnit(data.iconSize),
+    "font-size": ".8em",
+    display: "block",
   });
 }
 

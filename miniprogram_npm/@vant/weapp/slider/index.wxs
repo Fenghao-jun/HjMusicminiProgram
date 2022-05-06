@@ -1,6 +1,6 @@
 /* eslint-disable */
-var style = require('../wxs/style.wxs');
-var addUnit = require('../wxs/add-unit.wxs');
+var style = require("../wxs/style.wxs");
+var addUnit = require("../wxs/add-unit.wxs");
 
 function barStyle(barHeight, activeColor) {
   return style({

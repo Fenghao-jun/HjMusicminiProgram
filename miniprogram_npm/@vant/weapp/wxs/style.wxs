@@ -1,13 +1,13 @@
 /* eslint-disable */
-var object = require('./object.wxs');
-var array = require('./array.wxs');
+var object = require("./object.wxs");
+var array = require("./array.wxs");
 
 function kebabCase(word) {
   var newWord = word
-    .replace(getRegExp("[A-Z]", 'g'), function (i) {
-      return '-' + i;
+    .replace(getRegExp("[A-Z]", "g"), function (i) {
+      return "-" + i;
     })
-    .toLowerCase()
+    .toLowerCase();
 
   return newWord;
 }
@@ -16,24 +16,24 @@ function style(styles) {
   if (array.isArray(styles)) {
     return styles
       .filter(function (item) {
-        return item != null && item !== '';
+        return item != null && item !== "";
       })
       .map(function (item) {
         return style(item);
       })
-      .join(';');
+      .join(";");
   }
 
-  if ('Object' === styles.constructor) {
+  if ("Object" === styles.constructor) {
     return object
       .keys(styles)
       .filter(function (key) {
-        return styles[key] != null && styles[key] !== '';
+        return styles[key] != null && styles[key] !== "";
       })
       .map(function (key) {
-        return [kebabCase(key), [styles[key]]].join(':');
+        return [kebabCase(key), [styles[key]]].join(":");
       })
-      .join(';');
+      .join(";");
   }
 
   return styles;

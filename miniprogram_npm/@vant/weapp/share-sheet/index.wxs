@@ -8,5 +8,5 @@ function isMulti(options) {
 }
 
 module.exports = {
-  isMulti: isMulti
+  isMulti: isMulti,
 };

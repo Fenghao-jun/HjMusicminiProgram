@@ -1,19 +1,19 @@
 /* components/rank-song/index.wxss */
-.rank-song{
-	display: flex;
-	align-items: center;
-	height: 100rpx;
-	width: 100%;
-	padding: 10rpx 0rpx;
+.rank-song {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+  padding: 10rpx 0rpx;
 }
 .image {
-	width: 100rpx;
-	height: 100rpx;
-	border-radius: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
 }
 .content {
-	flex: 1;
-	margin-left: 16rpx;
+  flex: 1;
+  margin-left: 16rpx;
 }
 .content .name {
   font-size: 32rpx;
@@ -27,6 +27,6 @@
 }
 
 .rank-song-icon {
-	width: 50rpx;
-	height: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
 }

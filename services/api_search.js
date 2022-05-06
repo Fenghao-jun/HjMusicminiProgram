@@ -1,13 +1,13 @@
-import mRequire from './index'
-import mRequest from './index'
+import mRequire from "./index";
+import mRequest from "./index";
 
 export function getSearchHot() {
-	return mRequire.get('/search/hot')
+  return mRequire.get("/search/hot");
 }
 
 export function getSearchSuggest(keyword) {
-	return mRequire.get('/search/suggest', {
-		keyword,
-		type: 'mobile'
-	})
+  return mRequire.get("/search/suggest", {
+    keyword,
+    type: "mobile",
+  });
 }

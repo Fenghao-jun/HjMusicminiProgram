@@ -1,4 +1,4 @@
 /* pages/search-detail/index.wxss */
-.van-search__content{
-	background-color: #ffffff !important;
+.van-search__content {
+  background-color: #ffffff !important;
 }
