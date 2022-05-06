@@ -15,3 +15,11 @@ export function getRankingSongs(idx = 0) {
     idx,
   });
 }
+
+export function getMenuListSongs(cat = "全部", limit = 6, offset = 0) {
+  return mRequire.get("/top/playlist", {
+    cat,
+    limit,
+    offset,
+  });
+}

@@ -9,8 +9,6 @@
   display: inline-block;
   vertical-align: top;
   width: 220rpx;
-  height: 220rpx;
-  background-color: red;
   margin-left: 20rpx;
 }
 

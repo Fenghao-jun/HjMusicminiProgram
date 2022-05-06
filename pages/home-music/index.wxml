@@ -23,4 +23,4 @@
 	<rank-song item='{{item}}'></rank-song>
 </block>
 
-<song-menu-area/>
+<song-menu-area songMenus='{{hotSongMenu}}' title='热门歌单'/>
