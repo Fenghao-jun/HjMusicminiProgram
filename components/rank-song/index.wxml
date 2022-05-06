@@ -1,6 +1,9 @@
 <!--components/rank-song/index.wxml-->
 <view class="rank-song">
-	<image  src="{{item.al.picUrl}}"></image>
+	<image class="image"  src="{{item.al.picUrl}}"></image>
 	<view class="content">
+		<view class="name">{{item.name}}</view>
+		<view class="source">{{item.al.name}} · {{item.ar[0].name}} </view>
 	</view>
+	<image src="/assets/images/icons/arrow-right.png" class="rank-song-icon"></image>
 </view>

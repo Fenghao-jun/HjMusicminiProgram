@@ -19,3 +19,8 @@
 </swiper>
 
 <area-header title='推荐歌曲'/>
+
+
+<block wx:for="{{recommendSongs}}" wx:key="id">
+	<rank-song item='{{item}}'></rank-song>
+</block>
