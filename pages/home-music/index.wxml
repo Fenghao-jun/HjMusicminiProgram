@@ -24,3 +24,5 @@
 </block>
 
 <song-menu-area songMenus='{{hotSongMenu}}' title='热门歌单'/>
+<song-menu-area songMenus='{{recommendSongMenus}}' title='推荐歌单'/>
+

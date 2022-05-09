@@ -1,4 +1,7 @@
 /* components/song-menu-area/index.wxss */
+.song-menu-area{
+  padding-top: 20rpx;
+}
 .menu-list {
   width: 100vw;
   position: relative;
