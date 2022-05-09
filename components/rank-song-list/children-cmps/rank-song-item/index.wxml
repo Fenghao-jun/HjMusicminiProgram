@@ -5,8 +5,8 @@
 		<view class="title">{{item.name}}</view>
 		<block wx:for="{{item.list}}" wx:key="id">
 			<view>
-				<text>{{index}}.{{item.name}}</text>
-				<text>-{{item.ar[0].name}}</text>
+				<text class="song-name">{{index + 1}}.{{item.name}}</text>
+				<text class="song-author">-{{item.ar[0].name}}</text>
 			</view>
 		</block>
 	</view>

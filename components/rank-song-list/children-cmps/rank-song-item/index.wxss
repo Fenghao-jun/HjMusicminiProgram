@@ -16,6 +16,14 @@
 	display: inline-block;
 	width: 30%;
 }
+.song-name{
+  padding-right: 10rpx;
+}
+
+.song-author{
+  font-size: 24rpx;
+  color: #999;
+}
 .image{
 	width: 100%;
 }
