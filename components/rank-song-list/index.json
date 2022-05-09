@@ -1,0 +1,7 @@
+{
+	"component": true,
+	"usingComponents": {
+		"area-header":"../area-header/index",
+		"rank-song-item":"./children-cmps/rank-song-item/index"
+	}
+}

@@ -20,9 +20,12 @@
 
 <area-header title='推荐歌曲'/>
 <block wx:for="{{recommendSongs}}" wx:key="id">
-	<rank-song item='{{item}}'></rank-song>
+	<recommended-song item='{{item}}'></recommended-song>
 </block>
 
 <song-menu-area songMenus='{{hotSongMenu}}' title='热门歌单'/>
 <song-menu-area songMenus='{{recommendSongMenus}}' title='推荐歌单'/>
+
+
+<rank-song-list rankList='{{listMap}}'></rank-song-list>
 

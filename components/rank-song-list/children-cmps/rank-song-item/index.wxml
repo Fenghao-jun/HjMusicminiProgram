@@ -1,0 +1,17 @@
+<!--components/rank-song-list/children-cmps/rank-song-item/index.wxml-->
+<wxs src='../../../../utils/format.wxs' module="format"></wxs>
+<view class="rank-song-item">
+	<view class="rank-song-item-list">
+		<view class="title">{{item.name}}</view>
+		<block wx:for="{{item.list}}" wx:key="id">
+			<view>
+				<text>{{index}}.{{item.name}}</text>
+				<text>-{{item.ar[0].name}}</text>
+			</view>
+		</block>
+	</view>
+	<view class="rank-song-item-info">
+		<image class="image" src='{{item.coverImgUrl}}' mode="widthFix"></image>
+		<text class="playcount">{{format.formatCounter(item.playCount)}}</text>
+	</view>
+</view>

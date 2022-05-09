@@ -1,0 +1,8 @@
+<!--components/rank-song-list/index.wxml-->
+<area-header title='巅峰榜'>
+	<text> </text>
+</area-header>
+
+<block wx:for="{{rankList}}" wx:key="name">
+	<rank-song-item item='{{item}}'></rank-song-item>
+</block>
