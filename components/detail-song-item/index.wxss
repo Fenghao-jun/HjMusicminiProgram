@@ -1,0 +1,30 @@
+/* components/detail-song-item/index.wxss */
+.detail-song-item{
+	display: flex;
+	height: 100rpx;
+	width: 100%;
+}
+.index{
+	font-weight: 500;
+	font-size: 32rpx;
+	text-align: center;
+	line-height: 100rpx;
+	box-sizing: border-box;
+	padding: 0 15rpx;
+}
+.detail-song-name{
+	font-weight: 450;
+	font-size: 30rpx;
+}
+.detail-song-info {
+	display: flex;
+	align-items: center;
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+.icon { 
+  width: 38rpx;
+  height: 22rpx;
+  margin-right: 10rpx;
+}

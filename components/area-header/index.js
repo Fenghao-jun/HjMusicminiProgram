@@ -8,6 +8,10 @@ Component({
       type: String,
       value: "推荐",
     },
+    showRight:{
+      type:Boolean,
+      value:true
+    }
   },
 
   /**
@@ -18,5 +22,9 @@ Component({
   /**
    * 组件的方法列表
    */
-  methods: {},
+  methods: {
+    handleTraggerEvent:function(){
+      this.triggerEvent('click')
+    }
+  },
 });

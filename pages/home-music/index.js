@@ -83,5 +83,14 @@ Page({
       const newData = { ...oldData,[id]:{name,coverImgUrl,playCount,list}}
       this.setData({listMap:newData})
     }
+  },
+  handleMoreClick:function(){
+    this.handleNavigateToDetail('hotRanking')
+  },
+  handleNavigateToDetail:function(rankName){
+    wx.navigateTo({
+      url: `/pages/detail-songs/index?rankName=${rankName}`,
+    })
   }
+  
 });

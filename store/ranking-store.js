@@ -1,7 +1,7 @@
 import { HYEventStore } from "hy-event-store";
 
 import { getRankingSongs } from "../services/api_music";
-const typeMap = {
+export const typeMap = {
   0:'hotRanking',
   1:'newRanking',
   2:'originalRanking',

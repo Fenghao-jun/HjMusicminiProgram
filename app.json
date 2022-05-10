@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/home-music/index",
+    "pages/detail-songs/index",
     "pages/home-video/index",
     "pages/video-detail/index",
     "pages/search-detail/index"

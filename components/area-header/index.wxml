@@ -1,12 +1,12 @@
 <!--components/area-header/index.wxml-->
 <view class="area-header">
 	<view class="title">{{title}}</view>
-	<view class="right-content">
+	<view class="right-content" bindtap="handleTraggerEvent" wx:if="{{showRight}}" >
 		<view class="slot">
 			<slot></slot>
 		</view>
 		<view class="default">
-			<view class="right-title">更多</view>
+			<view class="right-title" >更多</view>
 			<image class="icon" src="/assets/images/icons/arrow-right.png" />
 		</view>
 
